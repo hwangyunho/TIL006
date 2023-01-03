@@ -133,4 +133,21 @@
 ***
 
 13. 중복데이터에서 단일값 출력
-    
+* 연산자
+    * DISTINCT
+    *  BETWEEN ~ AND
+* SELECT의 칼럼 앞에 명시한다.
+
+***
+
+14. 형식 변환
+* 데이터 형식 변환
+  * [BINARY, CHAR, DATE, DATETIME, DECIMAL, JSON, NCHAR 등등]
+* SELECT CAST(NOW() AS SIGNED); #형식변환
+> * SELECT
+> * FROM
+> * WHERE
+> * GROUP BY
+> * HAVING
+> * ORDER BY
+> * LIMIT;
