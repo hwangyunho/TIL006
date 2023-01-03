@@ -111,3 +111,26 @@
 
 ***
 
+11. ROW_NUMBER()
+* SELECT ROW_NUMBER() [OVER 	PARTITION BY,
+    * ORDER BY]
+* 열 A 값의 내림차순으로 일련 번호 리턴 : SELECT ROW_NUMBER() OVER (ORDER BY A DESC);
+* 컬럼 X 의 값으로 그룹핑 분할하고, 그 중에서 컬럼 A의 값의 내림차순으로 일련번호를 리턴
+* SELECT ROW_NUMBER() OVER (PARTITION BY, ORDER BY );
+* SELECT RANK() OVER (PARTITION BY, ORDER BY ); #1,2,2,2,5,5,7,7,9
+* SELECT DENSE_RANK() OVER (PARTITION BY, ORDER BY ); #1,2,2,3,3,3,4,4,5
+
+***
+
+12. DATETIME OR DATE
+* YEAR() : 1000~ 9999 4자리 표시
+* MONTH() : 1~12
+* DAY() : 1~31
+* DAYOFMONTH() = DAY()
+* HOUR()/ MINUTE()/ SECOND()
+* DATE_ADD(INTERVAL), DATE_SUB()
+
+***
+
+13. 중복데이터에서 단일값 출력
+    
